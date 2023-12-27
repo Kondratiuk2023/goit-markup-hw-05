@@ -511,8 +511,8 @@ button {
 }
 
 /* Modal window */
-/* .backdrop {
-  display: none;
+.backdrop {
+  /* display: none; */
 
   position: fixed;
   top: 0;
@@ -522,5 +522,11 @@ button {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.3);
-} */
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
