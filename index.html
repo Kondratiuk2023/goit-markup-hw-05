@@ -643,34 +643,31 @@
               </svg>
             </div>
           </div>
-          <div class="form-wrapper">
+          <div class="form-wrapper-comment">
             <label class="form-label" for="user-comment">Comment</label>
-            <div class="form-field">
-              <textarea
-                class="form-comment-message"
-                name="user-comment"
-                id="user-comment"
-                rows="4"
-                placeholder="Text input"></textarea>
-            </div>
+            <textarea
+              class="form-comment-message"
+              name="user-comment"
+              id="user-comment"
+              rows="4"
+              placeholder="Text input"></textarea>
           </div>
-          <div class="form-agreement-cont">
-            <label class="form-agreement-privacy" for="user-privacy">
-              <input
-                class="form-container-checkbox visually-hidden"
-                type="checkbox"
-                id="user-privacy"
-                name="user-privacy"
-                value="true" />
-              <span class="form-agreement-checkbox">
-                <svg class="form-agreement-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="form-agreement-link" href="">Privacy Policy</a>
-            </label>
-          </div>
+
+          <label class="form-agreement-privacy" for="user-privacy">
+            <input
+              class="form-container-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true" />
+            <span class="form-agreement-checkbox">
+              <svg class="form-agreement-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="form-agreement-link" href="">Privacy Policy</a>
+          </label>
 
           <button class="form-btn" type="submit" disabled>Send</button>
         </form>

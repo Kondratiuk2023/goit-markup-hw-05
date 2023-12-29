@@ -594,7 +594,8 @@ button {
 
   top: 50%;
   left: 50%;
-  transform: translate (-50%, -50%) scale(1);
+
+  transform: translate(-50%, -50%) scale(1);
 
   padding: 72px 24px 24px 24px;
 
@@ -645,12 +646,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.modal-form {
-}
-.form {
-}
 .form-wrapper {
   margin-bottom: 8px;
+}
+.form-wrapper-comment {
+  margin-bottom: 16px;
 }
 .form-label {
   display: block;
@@ -698,7 +698,6 @@ button {
 
   padding: 8px 16px;
   height: 120px;
-  /* min-height: 120px; */
   max-height: 180px;
 
   border-radius: 4px;
@@ -717,7 +716,7 @@ button {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.fform-comment-message::placeholder {
+.form-comment-message::placeholder {
   color: currentColor;
 }
 .form-comment-message:focus {
@@ -725,7 +724,6 @@ button {
 }
 .form-agreement-privacy {
   display: block;
-  /* margin-bottom: 24px; */
 
   color: #8e8f99;
 
@@ -734,9 +732,6 @@ button {
   letter-spacing: 0.04em;
 
   user-select: none;
-}
-.form-agreement-cont {
-  margin-bottom: 24px;
 }
 .form-agreement-checkbox {
   display: inline-flex;
@@ -786,6 +781,7 @@ button {
 
   display: block;
   margin: auto;
+  margin-top: 24px;
 
   border: none;
   border-radius: 4px;
