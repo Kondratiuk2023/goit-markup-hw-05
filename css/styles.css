@@ -592,9 +592,9 @@ button {
   width: 408px;
   min-height: 584px;
 
-  /* top: 50%;
+  top: 50%;
   left: 50%;
-  transform: translate (-50%, -50%) scale(1); */
+  transform: translate (-50%, -50%) scale(1);
 
   padding: 72px 24px 24px 24px;
 
@@ -650,7 +650,7 @@ button {
 .form {
 }
 .form-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .form-label {
   display: block;
@@ -735,7 +735,7 @@ button {
 
   user-select: none;
 }
-.form-agreement-container {
+.form-agreement-cont {
   margin-bottom: 24px;
 }
 .form-agreement-checkbox {
