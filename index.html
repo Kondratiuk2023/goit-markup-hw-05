@@ -578,7 +578,7 @@
               <input
                 class="subscribe-form-input"
                 type="email"
-                name="e_mail"
+                name="subscribe-form-email"
                 placeholder="E-mail" />
             </label>
             <button class="subscribe-form-btn" type="submit">
@@ -593,7 +593,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="modal close button">
           <svg class="modal-icon-btn" width="8" height="8">
@@ -644,30 +644,33 @@
             </div>
           </div>
           <div class="form-wrapper">
-            <label class="form-label" for="user-message">Comment</label>
+            <label class="form-label" for="user-comment">Comment</label>
             <div class="form-field">
               <textarea
-                class="form-message"
-                name="user-message"
-                id="user-message"
+                class="form-comment-message"
+                name="user-comment"
+                id="user-comment"
                 rows="4"
                 placeholder="Text input"></textarea>
             </div>
           </div>
 
-          <label class="form-agreement">
-            <input
-              class="checkbox visually-hidden"
-              type="checkbox"
-              name="usr-agreement"
-              value="false" />
-            <span class="form-agreement-checkbox">
-              <svg class="form-agreement-icon" width="10" height="10">
-                <use href="./images/icons.svg#icon-Vector"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="form-agreement-link" href="">Privacy Policy</a>
+          <label class="form-agreement-privacy" for="user-privacy">
+            <div class="form-agreement-container">
+              <input
+                class="form-container-checkbox visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                name="user-privacy"
+                value="true" />
+              <span class="form-agreement-checkbox">
+                <svg class="form-agreement-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="form-agreement-link" href="">Privacy Policy</a>
+            </div>
           </label>
 
           <button class="form-btn" type="submit" disabled>Send</button>
