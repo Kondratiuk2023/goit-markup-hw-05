@@ -758,7 +758,8 @@ button {
   + .form-agreement-privacy
   > .form-agreement-checkbox {
   background-color: #404bbf;
-  border-color: transparent;
+  border: none;
+  fill: #f4f4fd;
 }
 .form-agreement-icon {
   opacity: 0;
@@ -769,7 +770,6 @@ button {
   > .form-agreement-checkbox
   > .form-agreement-icon {
   opacity: 1;
-  fill: #f4f4fd;
 }
 .form-agreement-link {
   color: #4d5ae5;
