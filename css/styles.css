@@ -722,6 +722,9 @@ button {
 .form-comment-message:focus {
   border-color: #4d5ae5;
 }
+.agreement-form-wrapper {
+  margin-bottom: 24px;
+}
 .form-agreement-privacy {
   display: block;
 
@@ -751,7 +754,9 @@ button {
   fill: transparent;
   cursor: pointer;
 }
-.form-container-checkbox:checked + .form-agreement-checkbox {
+.form-container-checkbox:checked
+  + .form-agreement-privacy
+  > .form-agreement-checkbox {
   background-color: #404bbf;
   border-color: transparent;
 }
@@ -760,7 +765,8 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-container-checkbox:checked
-  + .form-agreement-checkbox
+  + .form-agreement-privacy
+  > .form-agreement-checkbox
   > .form-agreement-icon {
   opacity: 1;
   fill: #f4f4fd;
@@ -781,7 +787,6 @@ button {
 
   display: block;
   margin: auto;
-  margin-top: 24px;
 
   border: none;
   border-radius: 4px;
